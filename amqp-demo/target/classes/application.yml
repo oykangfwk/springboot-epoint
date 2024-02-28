@@ -1,0 +1,8 @@
+spring:
+  rabbitmq:
+    host:
+    username:
+    password:
+    port:
+    publisher-confirm-type: correlated  #消息发送到交换机后会触发confirm方法
+    publisher-returns: true  #开启 队列未收到消息回退给生产者 回调方法触发 returnedMessage

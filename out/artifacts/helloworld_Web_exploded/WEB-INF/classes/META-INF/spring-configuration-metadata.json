@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "car",
+      "type": "org.example.bean.Car",
+      "sourceType": "org.example.bean.Car"
+    }
+  ],
+  "properties": [
+    {
+      "name": "car.brand",
+      "type": "java.lang.String",
+      "sourceType": "org.example.bean.Car"
+    },
+    {
+      "name": "car.name",
+      "type": "java.lang.String",
+      "sourceType": "org.example.bean.Car"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,28 @@
+server:
+  port: 8088
+
+#开启日志
+logging:
+  level:
+    org.example: debug
+
+#配置数据源
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/mysql?useUnicode=true&charaterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: 11111
+
+#mybatis
+mybatis:
+  #mapper存放位置
+  mapper-locations: classpath:/mapper/*.xml
+  #开启驼峰命名
+  configuration:
+    map-underscore-to-camel-case: true
+    lazy-loading-enabled: true
+    cache-enabled: true
+  #包别名
+  type-aliases-package: org.example.pojo

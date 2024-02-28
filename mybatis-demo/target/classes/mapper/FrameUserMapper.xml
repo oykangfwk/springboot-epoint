@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.FrameUserMapper">
+    <cache></cache>
+
+    <select id="getAllUser" resultType="FRAMEUSER">
+        select * from frame_user
+        <where>
+            <if test="loginid !=''">
+                and loginid='test'
+            </if>
+            <foreach collection="emps" item="item" separator="or" close="'" open="'">
+
+            </foreach>
+        </where>
+    </select>
+
+</mapper>

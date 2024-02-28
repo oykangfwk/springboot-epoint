@@ -1,0 +1,10 @@
+#静态资源访问前缀
+spring:
+#  mvc:
+#    static-path-pattern: /res/**
+  resources:
+    static-locations: classpath:/pages/
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
